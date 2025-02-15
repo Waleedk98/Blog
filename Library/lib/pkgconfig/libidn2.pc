@@ -1,0 +1,11 @@
+prefix=/Applications/MAMP/Library
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libidn2
+Description: Library implementing IDNA2008 and TR46
+Version: 2.3.4
+Cflags: -I${includedir}
+Libs: -L${libdir} -lidn2
+Libs.private: -L/Applications/MAMP/Library/lib -liconv -R/Applications/MAMP/Library/lib -L/Applications/MAMP/Library/lib -lunistring -L/Applications/MAMP/Library/lib -liconv -R/Applications/MAMP/Library/lib

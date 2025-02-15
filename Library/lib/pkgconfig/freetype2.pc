@@ -1,0 +1,14 @@
+prefix=/Applications/MAMP/Library
+exec_prefix=/Applications/MAMP/Library
+libdir=/Applications/MAMP/Library/lib
+includedir=/Applications/MAMP/Library/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 18.5.12
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: -lbz2
+Cflags: -I${includedir}/freetype2

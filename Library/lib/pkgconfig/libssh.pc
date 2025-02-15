@@ -1,0 +1,6 @@
+Name: libssh
+Description: The SSH Library
+Version: 0.9.7
+Libs: -L/Applications/MAMP/Library/lib -lssh
+Cflags: -I/Applications/MAMP/Library/include
+

@@ -1,0 +1,12 @@
+prefix=/Applications/MAMP/Library
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.29
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Libs: -L${libdir} -lxslt -L/Applications/MAMP/Library/lib -L/Applications/MAMP/Library/lib -lxml2 -L/Applications/MAMP/Library/lib -lz -L/Applications/MAMP/Library/lib -llzma -lpthread -L/Applications/MAMP/Library/lib -liconv -L/Applications/MAMP/Library/lib -licui18n -licuuc -licudata  
+Cflags: -I${includedir}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuremap [
+  <!ELEMENT configuremap (configure)+>
+  <!ATTLIST configuremap xmlns CDATA #FIXED ''>
+  <!ELEMENT configure EMPTY>
+  <!ATTLIST configure xmlns CDATA #FIXED '' name NMTOKEN #REQUIRED
+    value CDATA #REQUIRED>
+]>
+<!--
+  ImageMagick build configuration.
+-->
+<configuremap>
+  <configure name="CC" value="gcc"/>
+  <configure name="CFLAGS" value="-I/Applications/MAMP/Library/include/libxml2 -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include/webp -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include/webp -I/Applications/MAMP/Library/include/libpng16 -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include/freetype2 -I/Applications/MAMP/Library/include/libpng16 -I/Applications/MAMP/Library/include  -I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include  -Wall -I/Applications/MAMP/Library/include -fPIC -fexceptions -D_FORTIFY_SOURCE=0 -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CODER_PATH" value="/Applications/MAMP/Library/lib/ImageMagick/modules-Q16HDRI/coders"/>
+  <configure name="CONFIGURE_PATH" value="/Applications/MAMP/Library/etc/ImageMagick-7/"/>
+  <configure name="CONFIGURE" value="./configure  'PSDelegate=/Applications/MAMP/Library/bin/gs' 'PKG_CONFIG_PATH=/Applications/MAMP/Library/lib/pkgconfig' 'CPPFLAGS=-I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include/libpng16 -I/Applications/MAMP/Library/include/freetype2 -I/Applications/MAMP/Library/include/ghostscript' 'LDFLAGS=-L/Applications/MAMP/Library/lib -lpng16 -lfreetype -lz -R/Applications/MAMP/Library/lib' '--prefix=/Applications/MAMP/Library' '-without-x' '--enable-shared' '--enable-static' '--enable-delegate-build' '--with-pkgconfigdir=/Applications/MAMP/Library/lib/pkgconfig' '--with-freetype=yes' '--enable-osx-universal-binary=no' '--disable-dependency-tracking' '--disable-silent-rules' '--disable-opencl' '--with-gvc=no' '--without-fftw' '--without-pango' '--without-wmf' '--without-perl' 'CFLAGS=-I/Applications/MAMP/Library/include -fPIC' 'LIBS=-lexpat' 'PKG_CONFIG=/Applications/MAMP/Library/bin/pkg-config' 'CXXFLAGS=-arch arm64'"/>
+  <configure name="COPYRIGHT" value="Copyright (C) 1999-2021 ImageMagick Studio LLC"/>
+  <configure name="CPPFLAGS" value="-I/Applications/MAMP/Library/include/ImageMagick-7"/>
+  <configure name="CXXFLAGS" value="-arch arm64 -pthread"/>
+  <configure name="CXX" value="g++"/>
+  <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
+  <configure name="DELEGATES" value="bzlib freetype jng jpeg lzma png ps tiff webp xml zip zlib zstd"/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value="'CFLAGS=-I/Applications/MAMP/Library/include -fPIC' 'CPPFLAGS=-I/Applications/MAMP/Library/include -I/Applications/MAMP/Library/include/libpng16 -I/Applications/MAMP/Library/include/freetype2 -I/Applications/MAMP/Library/include/ghostscript' 'LDFLAGS=-L/Applications/MAMP/Library/lib -lpng16 -lfreetype -lz -R/Applications/MAMP/Library/lib' 'LIBS=-lexpat'  --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-autotrace=no  --with-fftw=no  --with-flif=no  --with-gslib=no  --with-fontpath=  --with-gvc=no  --with-pango=no  --with-rsvg=no  --with-wmf=no  --with-perl=no "/>
+  <configure name="DOCUMENTATION_PATH" value="/Applications/MAMP/Library/share/doc/ImageMagick-7"/>
+  <configure name="EXEC-PREFIX" value="/Applications/MAMP/Library"/>
+  <configure name="EXECUTABLE_PATH" value="/Applications/MAMP/Library/bin"/>
+  <configure name="FEATURES" value="DPC HDRI Cipher"/>
+  <configure name="FILTER_PATH" value="/Applications/MAMP/Library/lib/ImageMagick/modules-Q16HDRI/filters"/>
+  <configure name="GIT_REVISION" value="19648" />
+  <configure name="HOST" value="arm-apple-darwin21.6.0"/>
+  <configure name="INCLUDE_PATH" value="/Applications/MAMP/Library/include/ImageMagick-7"/>
+  <configure name="LDFLAGS" value="-L/Applications/MAMP/Library/lib -L/Applications/MAMP/Library/lib -lpng16 -lfreetype -lz -R/Applications/MAMP/Library/lib"/>
+  <configure name="LIBRARY_PATH" value="/Applications/MAMP/Library/lib/ImageMagick"/>
+  <configure name="LIBS" value="-lexpat   -ltiff -L/Applications/MAMP/Library/lib -lfreetype  -ljpeg    -L/Applications/MAMP/Library/lib -lpng16 -lz        -L/Applications/MAMP/Library/lib -lwebpmux -lwebpdemux -L/Applications/MAMP/Library/lib -lwebp       -L/Applications/MAMP/Library/lib -llzma -lbz2      -L/Applications/MAMP/Library/lib -lxml2  -L/Applications/MAMP/Library/lib -lz -L/Applications/MAMP/Library/lib -lzip    -lm    -lpthread  "/>
+  <configure name="LIB_VERSION_NUMBER" value="7,1,0,23"/>
+  <configure name="LIB_VERSION" value="0x710"/>
+  <configure name="NAME" value="ImageMagick"/>
+  <configure name="PCFLAGS" value="-DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="PREFIX" value="/Applications/MAMP/Library"/>
+  <configure name="QuantumDepth" value="16"/>
+  <configure name="RELEASE_DATE" value="2022-02-05"/>
+  <configure name="SHAREARCH_PATH" value="/Applications/MAMP/Library/lib/ImageMagick/config-Q16HDRI"/>
+  <configure name="SHARE_PATH" value="/Applications/MAMP/Library/share/ImageMagick-7"/>
+  <configure name="TARGET_CPU" value="arm"/>
+  <configure name="TARGET_OS" value="darwin21.6.0"/>
+  <configure name="TARGET_VENDOR" value="apple"/>
+  <configure name="VERSION" value="7.1.0"/>
+  <configure name="WEBSITE" value="https://imagemagick.org"/>
+</configuremap>

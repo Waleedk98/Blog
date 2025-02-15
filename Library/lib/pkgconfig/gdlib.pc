@@ -1,0 +1,13 @@
+prefix=/Applications/MAMP/Library
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gd
+Description: GD graphics library
+Version: 2.3.3
+Requires:
+Requires.private:   zlib  libpng  freetype2 >= 9.8.3  libjpeg  libtiff-4  libwebp >= 0.2.0
+Cflags: -I${includedir}
+Libs.private:  -liconv
+Libs: -L${libdir} -lgd
